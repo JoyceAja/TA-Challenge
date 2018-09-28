@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      weather: []
     };
   }
 
@@ -18,18 +18,18 @@ class App extends Component {
       .get(url)
       .then(data => {
         this.setState({
-          data: data.data.response[0]
+          weather: data.data.response[0]
         });
-        console.log(data.data.response[0]);
+        console.log(weather.data.response[0]);
       })
       .catch(err => console.log(err));
   };
 
   render() {
-    const { data } = this.state;
+    const { weather } = this.state;
     return(
       <div>
-        <Page data={data.periods} /> 
+        <Page data={weather.periods} /> 
       </div>
     );
   }
