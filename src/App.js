@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import Page from "./component/mainpage";
+import Page from "./component/tempForWeek";
 import "./App.css";
 
 class App extends Component {
