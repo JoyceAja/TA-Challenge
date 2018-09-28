@@ -6,9 +6,11 @@ body {
 }
 .container{
   height: 100vh;
+  /* max-width:800px; */
   display:flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 .temp-box{
@@ -37,4 +39,23 @@ button{
   padding:10px;
   border-radius: 5px;
   font-size:16px;
+}
+@media screen and (max-width: 800px){
+  /* .container{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .temp-box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfd8dc;
+  }
 }
