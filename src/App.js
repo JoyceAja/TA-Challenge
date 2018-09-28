@@ -20,7 +20,7 @@ class App extends Component {
         this.setState({
           weather: data.data.response[0]
         });
-        console.log(weather.data.response[0]);
+        console.log(data.data.response[0]);
       })
       .catch(err => console.log(err));
   };
